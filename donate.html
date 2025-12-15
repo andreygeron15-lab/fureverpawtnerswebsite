@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate – Furever Pawtner</title>
+    <link rel="stylesheet" href="donatestyle.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-section">
+            <img src="pawlogo.png" alt="Logo" class="logo">
+            <h2>Furever Pawtner</h2>
+        </div>
+
+        <nav>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <button class="back-btn" onclick="window.location.href='homepage.html'">&#8592; Back</button>
+
+
+    <section class="donate-container">
+
+     
+        <div class="animals-grid">
+            <div class="animal-card">
+                <img src="jake.jpg" alt="Jakey">
+                <p class="name">JAKEY</p>
+            </div>
+
+            <div class="animal-card tall">
+                <img src="rodge.jpg" alt="Rodgegy">
+                <p class="name">RODGEGY</p>
+            </div>
+
+            <div class="animal-card">
+                <img src="tags.jpg" alt="Carly">
+                <p></p>
+                <p class="name">CARLY</p>
+            </div>
+
+            <div class="animal-card">
+                <img src="darren.jpg" alt="Ashley">
+                <p></p>
+                <p class="name">ASHLEY</p>
+            </div>
+        </div>
+
+       
+        <div class="donate-box">
+            <h2 class="donate-title">DONATE ONLINE</h2>
+            <p class="donate-sub">
+                Help us help more animals.  
+                The shelter and our programs are funded solely by donations.
+            </p>
+
+            <div class="donation-type">
+                <button class="type-btn active" id="oneTime">One-time Donation</button>
+                <button class="type-btn" id="recurring">Recurring Donation</button>
+            </div>
+
+            <form class="donate-form">
+                <input type="text" placeholder="FIRST NAME">
+                <input type="text" placeholder="LAST NAME">
+                <input type="email" placeholder="EMAIL">
+                <input type="text" placeholder="MOBILE NUMBER (e.g. 09123456789)">
+                <input type="text" placeholder="DONATION FOR">
+                <input type="number" placeholder="AMOUNT">
+
+                <button type="button" class="submit-btn" onclick="goToPayment()">
+                    DONATE
+                </button>
+
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p><strong>Become a Supporting Member :</strong></p>
+        <p>
+            Supporting Members help the shelter and can join events  
+            such as fundraisers and other shelter activities.  
+            Your donation helps give animals food, care, shelter, and love.
+        </p>
+    </footer>
+
+<script src="donatescript.js"></script>
+</body>
+</html>

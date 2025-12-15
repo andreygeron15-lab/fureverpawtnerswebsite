@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login – Furever Pawtner</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-panel">
+        <a href="homepage.html" class="back-btn">← Back</a>
+
+        <img src="pawlogo.png" class="left-logo" alt="logo">
+
+        <h2 class="brand-name">Furever Pawtner</h2>
+    </div>
+
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="login-card">
+        <h1>Welcome to Furever Pawtner</h1>
+
+        <form id="loginForm">
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Email" required>
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <button type="submit" class="login-btn">Log in</button>
+</form>
+
+
+            <div class="divider">or</div>
+
+            <button type="button" class="create-btn" onclick="window.location.href='signup.html'">
+                Create a new account
+            </button>
+
+            <div class="social-buttons">
+               <a href="https://www.facebook.com" target="_blank" class="fb-btn">🔵 Log in with Facebook</a>
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&dsh=S387547827%3A1765518895599623&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=Ac2yZaUq3aBfnnyA9Twl9dudqe3jsifB7bjyI52dQX-QD_pcxkav18crElXkLamZAk4TK_E4IVdepQ&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+   target="_blank"
+   class="google-btn">
+    🟡 Log in with Gmail
+</a>
+
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<script src="loginscript.js"></script>
+</body>
+</html>

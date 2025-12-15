@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Inquiry</title>
+    <link rel="stylesheet" href="nuan.css">
+</head>
+<body>
+
+<div class="container">
+
+  
+    <div class="left-panel fade-in">
+        <button class="back-btn" onclick="window.history.back()">← Back</button>
+
+        <h2>Thank You for choosing Don!</h2>
+
+        <img src="don.jpg" alt="Don" class="pet-photo">
+
+        <ul class="pet-info">
+            <li>Don ( Years Old)</li>
+            <li>Male</li>
+            <li>Siberian Husky</li>
+        </ul>
+    </div>
+
+  
+    <div class="right-panel slide-in">
+        <h1>Fill the Requirements.</h1>
+
+        <form id="adoptionForm">
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Address</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Phone Number</label>
+            <input type="text" required>
+
+            <button type="submit" class="start-btn" onclick="window.location.href='contactUs.html'">START YOUR INQUIRY</button>
+        </form>
+
+        <button class="faq-btn" onclick="window.location.href='faq.html'">
+            READ FAQs
+        </button>
+    </div>
+
+</div>
+
+<script src="animalsscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    background: #e8d6b9;
+    font-family: Georgia, serif;
+}
+
+.payment-box {
+    width: 380px;
+    background: #2f231a;
+    padding: 20px;
+    border-radius: 6px;
+    color: #fff;
+    margin: 40px auto;
+}
+
+.payment-heading {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #b6d96f;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.payment-choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.payment-choice input {
+    accent-color: #b6d96f;
+}
+
+.payment-donate-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1f160f;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.payment-donate-btn:hover {
+    background: #3b2b20;
+}
+
+.payment-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.payment-form h4 {
+    margin-bottom: 10px;
+    color: #b6d96f;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.confirm-btn {
+    width: 100%;
+    padding: 10px;
+    background: #4a3a1e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.wallet-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #4a3a1e;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.back-btn {
+    background: #4a3a1e;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .payment-box {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .payment-heading {
+        font-size: 14px;
+    }
+
+    .payment-choice {
+        font-size: 13px;
+    }
+
+    .payment-donate-btn,
+    .confirm-btn,
+    .wallet-btn,
+    .back-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .payment-form input {
+        padding: 6px;
+    }
+}

@@ -1,0 +1,295 @@
+:root {
+    --left-bg-start-don: #D889AA; 
+    --left-bg-end-don: #8C55A0; 
+    --left-bg-start-donya: #CD6B96; 
+    --left-bg-end-donya: #824F91;   
+    --body-bg: #EAEAEA; 
+    --right-bg: #F0F0F0;
+    --text-dark: #333;
+    --text-light: #fff;
+    --box-bg: #806889;        
+    --button-bg: #f8f8f8;     
+    --button-text: #444;      
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--body-bg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.dynamic-container {
+    display: flex;
+    width: 900px;
+    max-width: 95%;
+    min-height: 600px;
+    box-shadow: 0 10px 30px rgba(212, 155, 214, 0.2);
+    border-radius: 15px; 
+    overflow: hidden;
+    margin: 20px;
+}
+
+.fixed-selector {
+    flex: 0 0 200px;
+    background-color: #555;
+    color: var(--text-light);
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selection-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pet-select-card {
+    width: 90%;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.pet-select-card:hover, .pet-select-card.active-select {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.select-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.pet-select-name {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.dynamic-content {
+    flex: 1;
+    background-color: var(--right-bg);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-detail-view {
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.pet-detail-view.active {
+    display: block;
+}
+
+.thank-you-dynamic {
+    color: var(--text-light);
+    padding: 30px 40px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.left-panel-don {
+    background: linear-gradient(to bottom, var(--left-bg-start-don), var(--left-bg-end-don));
+}
+
+.left-panel-donya {
+    background: linear-gradient(to bottom, var(--left-bg-start-donya), var(--left-bg-end-donya));
+}
+
+.pet-card-dynamic {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+}
+
+.pet-image-dynamic {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.thank-you-dynamic .thank-you-text {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.pet-details-dynamic {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: var(--text-light);
+}
+
+.static-form-section {
+    padding: 40px;
+    flex-grow: 1;
+    background-color: var(--right-bg);
+    position: relative;
+    margin-top: -80px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #444;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 0.9em;
+    color: #999;
+    pointer-events: none;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s;
+}
+
+.action-buttons-box {
+    background-color: var(--box-bg);
+    color: var(--text-light);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.start-inquiry-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.faq-btn {
+    background: none;
+    color: var(--text-light);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .dynamic-container {
+        flex-direction: column;
+        width: 95%;
+        min-height: auto;
+    }
+
+    .fixed-selector {
+        flex: 0 0 auto;
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 15px 10px;
+        justify-content: flex-start;
+    }
+
+    .pet-select-card {
+        width: 120px;
+        margin-right: 10px;
+    }
+
+    .dynamic-content {
+        width: 100%;
+    }
+
+    .pet-card-dynamic {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px auto;
+    }
+
+    .pet-details-dynamic {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px auto 20px auto;
+        text-align: center;
+    }
+
+    .thank-you-dynamic {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .static-form-section {
+        padding: 20px;
+        margin-top: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .form-title {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .input-group input {
+        font-size: 0.95em;
+    }
+
+    .start-inquiry-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .faq-btn {
+        font-size: 0.95em;
+    }
+}

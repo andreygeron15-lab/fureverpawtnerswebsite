@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Method</title>
+
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <button class="back-btn" onclick="window.location.href='homepage.html'">
+    ← Back
+    </button>
+
+<div class="payment-box">
+
+    <h3 class="payment-heading">Choose Payment Method</h3>
+
+    <div class="payment-options">
+        <label class="payment-choice">
+            <input type="radio" name="paymethod" value="card">
+            <span>Credit / Debit Card</span>
+        </label>
+
+        <label class="payment-choice">
+            <input type="radio" name="paymethod" value="ewallet">
+            <span>E-Wallet (GCash / Maya)</span>
+        </label>
+    </div>
+
+    <button class="payment-donate-btn" onclick="handlePayment()">
+        PROCEED TO PAY
+    </button>
+
+    <!-- CARD PAYMENT -->
+    <div class="payment-form" id="cardForm">
+        <h4>Card Details</h4>
+        <input type="text" placeholder="Cardholder Name">
+        <input type="text" placeholder="Card Number">
+        <input type="text" placeholder="MM / YY">
+        <input type="text" placeholder="CVV">
+        <button class="confirm-btn">PAY NOW</button>
+    </div>
+
+    <!-- E-WALLET PAYMENT -->
+    <div class="payment-form" id="ewalletForm">
+        <h4>E-Wallet Payment</h4>
+        <p>Select your E-Wallet:</p>
+        <button class="wallet-btn">GCash</button>
+        <button class="wallet-btn">Maya</button>
+    </div>
+
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>

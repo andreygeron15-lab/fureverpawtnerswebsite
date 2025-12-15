@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pet Adoption Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="container dynamic-container">
+            
+            <div class="left-panel fixed-selector">
+                <div class="back-button"><i class="fas fa-chevron-left"></i> Back</div>
+                
+                <h3 class="selection-title">Select a Pet:</h3>
+
+                <div class="pet-select-card" data-pet-id="don" onclick="showPetDetails('don')">
+                    <img src="cat-pictures-2024.webp" alt="Don" class="select-image">
+                    <div class="pet-select-name">Don</div>
+                </div>
+
+                <div class="pet-select-card" data-pet-id="donya" onclick="showPetDetails('donya')">
+                    <img src="UzAi5VX.jpg" alt="Donya" class="select-image">
+                    <div class="pet-select-name">Donya</div>
+                </div>
+
+                <div class="pet-select-card" data-pet-id="sparky" onclick="showPetDetails('sparky')">
+                    <img src="https://i.imgur.com/sparky-image-url.jpg" alt="Sparky" class="select-image">
+                    <div class="pet-select-name">Sparky</div>
+                </div>
+
+                <div class="pet-select-card" data-pet-id="clint" onclick="showPetDetails('clint')">
+                    <img src="https://i.imgur.com/clint-image-url.jpg" alt="Clint" class="select-image">
+                    <div class="pet-select-name">Clint</div>
+                </div>
+            </div>
+
+            <div class="right-panel dynamic-content">
+                
+                <div class="pet-detail-view active" data-pet-id="don">
+                    <div class="thank-you-dynamic left-panel-don">
+                        Thank You for choosing Don!
+                        <div class="pet-card-dynamic">
+                            <img src="cat-pictures-2024.webp" alt="Don" class="pet-image-dynamic">
+                            <div class="pet-details-dynamic">
+                                * Don
+                                * Male
+                                * British Shorthair
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pet-detail-view" data-pet-id="donya">
+                    <div class="thank-you-dynamic left-panel-donya">
+                        Thank You for choosing Donya!
+                        <div class="pet-card-dynamic">
+                            <img src="UzAi5VX.jpg" alt="Donya" class="pet-image-dynamic">
+                            <div class="pet-details-dynamic">
+                                * Donya
+                                * Female
+                                * Himalayan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pet-detail-view" data-pet-id="sparky">
+                    <div class="thank-you-dynamic left-panel-don">
+                        Thank You for choosing Sparky!
+                        <div class="pet-card-dynamic">
+                            <img src="https://i.imgur.com/sparky-image-url.jpg" alt="Sparky" class="pet-image-dynamic">
+                            <div class="pet-details-dynamic">
+                                * Sparky
+                                * Male
+                                * Ragdoll
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pet-detail-view" data-pet-id="clint">
+                    <div class="thank-you-dynamic left-panel-donya">
+                        Thank You for choosing Clint!
+                        <div class="pet-card-dynamic">
+                            <img src="https://i.imgur.com/clint-image-url.jpg" alt="Clint" class="pet-image-dynamic">
+                            <div class="pet-details-dynamic">
+                                * Clint
+                                * Male
+                                * Brown Classic Tabby
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="static-form-section">
+                    <h2 class="form-title">Fill the Requirements.</h2>
+                    <form action="#" method="POST">
+                        <div class="input-group"><label for="name">Full Name</label><input type="text" id="name" required></div>
+                        <div class="input-group"><label for="address">Address</label><input type="text" id="address" required></div>
+                        <div class="input-group"><label for="email">Email</label><input type="email" id="email" required></div>
+                        <div class="input-group"><label for="phone">Phone Number</label><input type="tel" id="phone" required></div>
+                        
+                        <div class="action-buttons-box">
+                            <button type="submit" class="start-inquiry-btn">START YOUR INQUIRY</button>
+                            <button type="button" class="faq-btn">READ FAQs</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+        function showPetDetails(petId) {
+            
+            document.querySelectorAll('.pet-detail-view').forEach(view => {
+                view.classList.remove('active');
+            });
+
+           
+            document.querySelector(pet-detail-view[data-pet,id="${petId}"]).classList.add('active');
+            
+            
+            document.querySelectorAll('.pet-select-card').forEach(card => {
+                card.classList.remove('active-select');
+            });
+            document.querySelector(pet-select-card[data-pet,id="${petId}"]).classList.add('active-select');
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            showPetDetails('don');
+        });
+    </script>
+</body>
+</html>

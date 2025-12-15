@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "agentUri": "http://localhost:5000",        
+            "joinedInfo": "session-12345",             
+            "localPath": "${workspaceFolder}/src",    
+            "pipeName": "myDebugPipe"                 
+        }
+    ]
+}
